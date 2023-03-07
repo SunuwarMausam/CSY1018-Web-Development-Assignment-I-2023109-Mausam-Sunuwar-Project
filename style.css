@@ -7,14 +7,14 @@ body{
 .grid-container{
 	display: grid;
 	grid-template-rows: 15% auto auto 15%;
-	grid-template-columns: 60% ;
+	grid-template-columns:;
 	gap:20px;
 	column-gap: 0px;
-
+	row-gap: 0px;
 }
 .item-1{
 	
-	margin: 3px 0px 0px 0px ;
+	margin: 0px;
 	grid-column: 1/ span 2;
 	padding: 0px 50px 40px 40px;
 	margin: 0px 0px 20px;
