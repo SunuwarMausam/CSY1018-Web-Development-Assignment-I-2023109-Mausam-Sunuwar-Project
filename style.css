@@ -122,17 +122,25 @@ small{
 	gap: 20px;
 
 }
+.form{
+	background-color: floralwhite;
+}
 .labels{
 	float: left;
-	width: 25%;
-	margin: auto;
+	width: 200px;
+	margin: 10px;
 }
 .respond{
 	float: left;
-	width: 75%;
-	margin: auto;
+	width: 400px;
+	margin: 10px;
 }
 label{
-	
-	padding: 10px;
+	font-family: 'dosis';
+}
+input, select, textarea{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid green;
+	outline: none;
 }
