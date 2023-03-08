@@ -23,8 +23,42 @@
 		</sectiion>
 	</header>
 	<div class="grid-container-2">
-		<div>
-			<img src="https://images.unsplash.com/photo-1674289145833-b3ec3cd37b34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+		<div class="photo">
+			<img src="https://images.unsplash.com/photo-1674289145833-b3ec3cd37b34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="image">
+		</div>
+		<div class="form">
+			<form method="get" action="/action-page.php">
+				<div class="label">
+					<div class="labels">
+					<label for="firstname">First Name:</label><br>
+					</div>
+					<div class="respond">
+					<input type="text" name="firstname" placeholder="Your first name" /><br>
+					</div>
+					<div class="labels">
+					<label for="secondname" >Second Name:</label><br>
+					</div>
+					<div class="respond">
+					<input type="text" name="secondname" placeholder="Your second name"><br>
+					</div>
+					<div class="labels">
+					<label for="country">Country</label><br>
+					</div>
+					<div class="respond">
+					<select name="country">
+						<option value="Nepal">Nepal</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="china">China</option>
+					</select><br>
+				</div>
+				<div class="labels">
+					<label for="message">Write your message:</label><br>
+					</div>
+					<div class="respond">
+					<textarea type="text" name="message" placeholder="your concern..."></textarea><br>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	

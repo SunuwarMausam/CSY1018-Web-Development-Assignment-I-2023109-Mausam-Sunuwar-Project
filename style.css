@@ -1,28 +1,8 @@
 body{
-	background-color: #dbd8e3;
+	background-image: linear-gradient(to right,#e7eaf6,#bdbdd7);
 	margin: 0;
 	padding: 0;
-	font-family: oxygen;
-}
-.grid-container{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: auto auto;
-	gap: 20px;
-}
-.item-1, .photo{
-	padding: 0px 0px 0px 0px;
-	margin: 0px;
-	margin: 0px 0px 20px 20px;
-	align-items: center;
-	justify-content: center;
-	background-color: floralwhite;
-	text-align: center;
-}
-.content{
-	padding: 10px;
-	margin: 5px;
-	
+	box-sizing: border-box;
 }
 header{
 	display: flex;
@@ -31,6 +11,7 @@ header{
 	align-items: center;
 	font-family: raleway;
 	font-weight: bolder;
+	padding: 0px 20px;
 }
 .logo{
 	font-family: 'dancing script';
@@ -67,13 +48,31 @@ nav ul li a:hover{
 	color: darkcyan;
 	transform: scale(1,1.4);
 }
-.item-1 h2{
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto;
+	gap: 30px;
+	justify-content: space-around;
+	margin: 20px 10px 10px 50px;
+}
+.item-1, .photo{
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	background-color: fade;
+}
+.content{
+	padding: 10px;
+	margin: auto;
+}
+
+.item-1 h1{
 	font-size: 40px;
 	font-family: 'raleway';
 	color: darkcyan;
 }.item-1 p{
 	font-style: none;
-	text-shadow: 1px 1px darkgrey;
+	font-size: larger;
 	font-family: 'dosis';
 }
 small{
@@ -117,3 +116,23 @@ small{
 .smalll-grid-4 h4,h6 {
 	font-family: raleway;
 } 
+.grid-container-2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+
+}
+.labels{
+	float: left;
+	width: 25%;
+	margin: auto;
+}
+.respond{
+	float: left;
+	width: 75%;
+	margin: auto;
+}
+label{
+	
+	padding: 10px;
+}
