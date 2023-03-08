@@ -1,0 +1,43 @@
+
+.grid-container-2{
+	display: grid;
+	grid-template-columns: 450px 750px auto auto;
+	gap: 20px;
+
+}
+.form{
+	height: auto;
+	background-color: #bdbdd7;
+}
+.labels{
+	float: left;
+	width: 300px;
+	margin: 10px;
+}
+.respond{
+	float: left;
+	width: 600px;
+	margin: 10px;
+}
+label{
+	font-family: 'dosis';
+	display: inline-block;
+}
+input, select, textarea{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid green;
+	outline: none;
+	border-radius: 10px;
+}
+input:hover, select:hover, textarea:hover{
+	box-shadow: 0px 0px 10px grey;
+}
+.add-info{
+	grid-column: 1/span 2;
+	grid-row: 2;
+}.photo{
+	text-align: center;
+	margin: auto;
+
+}
