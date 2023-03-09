@@ -7,7 +7,7 @@
 
 }
 .form{
-	
+	background-color: lightblue;
 	border-radius: 10px;
 	margin: 15px;
 	text-align: left;
@@ -109,7 +109,7 @@ select{
 	font-weight: bold;
 }
 .form-items{
-	background-color: #bdbdd7;
+	
 }.icon{
 	color: red;
 }

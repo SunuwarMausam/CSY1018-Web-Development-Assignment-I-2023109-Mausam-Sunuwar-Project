@@ -60,7 +60,7 @@ nav ul li a:hover{
 }
 .item-1{
 	
-	background-color:#e7eaf6;
+	background-color:lightblue;
 	border-radius: 9px;
 }
 .content{
@@ -134,4 +134,14 @@ small{
 	margin: auto;
 	width: 700px;
 	background-color: lightblue;
+}
+footer{
+	background-color: rgb(101, 87, 119);
+	color: white;
+	border-radius-top:5px ;
+}
+.page-foot{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
 }
