@@ -1,25 +1,10 @@
 body{
-	background-color: #dbd8e3;
+	background-image: linear-gradient(to right,#e7eaf6,#bdbdd7);
 	margin: 0;
 	padding: 0;
-	font-family: oxygen;
-}
-.grid-container{
-	display: grid;
-	grid-template-rows: 15% auto auto 15%;
-	grid-template-columns:;
-	gap:20px;
-	column-gap: 0px;
-	row-gap: 0px;
-}
-.item-1{
-	
-	margin: 0px;
-	grid-column: 1/ span 2;
-	padding: 0px 50px 40px 40px;
-	margin: 0px 0px 20px;
-	background-color: darkgrey;
-
+	background-position: center;
+	background-size: cover;
+	scroll-snap-type: hidden;
 }
 header{
 	display: flex;
@@ -28,9 +13,11 @@ header{
 	align-items: center;
 	font-family: raleway;
 	font-weight: bolder;
+	padding: 0px 20px;
 }
 .logo{
 	font-family: 'dancing script';
+	padding: 20px;
 }
 nav{
 	
@@ -53,29 +40,42 @@ nav ul li a{
 	padding: 8px;
 	margin: 5px;
 	color: black;
-	
+	font-weight: bolder;
 	font-size: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 nav ul li a:hover{
 	transition: 0.3s;
-	color: darkcyan;
+	color:  rgb(33, 156, 156);
 	transform: scale(1,1.4);
 }
-.item-2{
-		padding: 20px 5px 10px 50px;
-		background-color: ;
-		font-size: 20px;
-		overflow: hidden;
-		
-}.item-2 h2{
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto;
+	gap: 30px;
+	justify-content: space-around;
+	margin: 20px 10px 10px 50px;
+}
+.item-1{
+	
+	background-color:#e7eaf6;
+	border-radius: 9px;
+}
+.content{
+	padding: 10px;
+	margin-top:50px ;
+}
+
+.item-1 h1{
 	font-size: 40px;
 	font-family: 'raleway';
-	color: darkcyan;
-}.item-2 p{
+	color:  rgb(33, 156, 156);
+	padding-left: 15px;
+}.item-1 p{
 	font-style: none;
-	text-shadow: 1px 1px darkgrey;
+	font-size: larger;
 	font-family: 'dosis';
 }
 small{
@@ -88,24 +88,22 @@ small{
 	padding: 10px;
 	margin: 10px;
 	background-color: floralwhite;
-	border: 1px solid darkcyan;
+	border: 1px solid  rgb(33, 156, 156);
 	font-family: 'dancing script';
+	font-size: 20px;
 }
-.item-3{
-	padding: 5px;
-	text-align: left;
+.item-2{
+	background-color: #bdbdd7;
+	padding-left: 20px;
+	padding-top: 20px;
+	border-radius: 9px;
 }
-
-
-.item-3 .image{
+.image{
 	width: 200px;
 	height: auto;
 	box-shadow:15px 15px 10px 10px darkgrey;
 	border-radius: 5px;
 	opacity: 0.8;
-}
-.item-3 .image:hover{
-	opacity: 1;
 }
 .smalll-grid{
 	display: grid;
@@ -128,3 +126,12 @@ small{
 .smalll-grid-4 h4,h6 {
 	font-family: raleway;
 } 
+.about{
+	grid-row: 2;
+	grid-column: 1/span 2;
+	font-family: 'dosis';
+	padding: 20px ;
+	margin: auto;
+	width: 700px;
+	background-color: lightblue;
+}
