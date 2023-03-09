@@ -2,7 +2,9 @@ body{
 	background-image: linear-gradient(to right,#e7eaf6,#bdbdd7);
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	background-position: center;
+	background-size: cover;
+	scroll-snap-type: hidden;
 }
 header{
 	display: flex;
@@ -38,14 +40,14 @@ nav ul li a{
 	padding: 8px;
 	margin: 5px;
 	color: black;
-	
+	font-weight: bolder;
 	font-size: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 nav ul li a:hover{
 	transition: 0.3s;
-	color: darkcyan;
+	color:  rgb(33, 156, 156);
 	transform: scale(1,1.4);
 }
 .grid-container{
@@ -57,19 +59,19 @@ nav ul li a:hover{
 	margin: 20px 10px 10px 50px;
 }
 .item-1{
-	padding: 0px 0px 0px 0px;
-	margin: 0px;
+	
 	background-color:#e7eaf6;
+	border-radius: 9px;
 }
 .content{
 	padding: 10px;
 	margin-top:50px ;
 }
 
-.item-1 h1,h1{
+.item-1 h1{
 	font-size: 40px;
 	font-family: 'raleway';
-	color: darkcyan;
+	color:  rgb(33, 156, 156);
 	padding-left: 15px;
 }.item-1 p{
 	font-style: none;
@@ -86,8 +88,9 @@ small{
 	padding: 10px;
 	margin: 10px;
 	background-color: floralwhite;
-	border: 1px solid darkcyan;
+	border: 1px solid  rgb(33, 156, 156);
 	font-family: 'dancing script';
+	font-size: 20px;
 }
 .item-2{
 	background-color: #bdbdd7;
@@ -126,4 +129,9 @@ small{
 .about{
 	grid-row: 2;
 	grid-column: 1/span 2;
+	font-family: 'dosis';
+	padding: 20px ;
+	margin: auto;
+	width: 700px;
+	background-color: lightblue;
 }

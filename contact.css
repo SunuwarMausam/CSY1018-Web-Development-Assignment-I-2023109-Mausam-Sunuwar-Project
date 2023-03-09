@@ -1,31 +1,41 @@
 
 .grid-container-2{
 	display: grid;
-	grid-template-columns: 450px 750px auto auto;
+	grid-template-columns: repeat(2, 1fr) auto auto;
 	gap: 20px;
 
 }
 .form{
-	height: auto;
 	background-color: #bdbdd7;
+	border-radius: 10px;
+	margin: 15px;
+	text-align: left;
+	padding: 10px;
+}
+h1{
+	font-size: 40px;
+	color:  rgb(33, 156, 156);
+	font-family: 'dosis';
+	text-align: center;
 }
 .labels{
 	float: left;
 	width: 300px;
-	margin: 10px;
+	margin: 5px;
 }
 .respond{
 	float: left;
 	width: 600px;
-	margin: 10px;
+	margin: 5px;
 }
 label{
 	font-family: 'dosis';
 	display: inline-block;
+	font-weight: bolder;
 }
-input, select, textarea{
-	width: 100%;
-	padding: 15px;
+ input,select, textarea{
+	width: 80%;
+	padding: 10px;
 	border: 1px solid green;
 	outline: none;
 	border-radius: 10px;
@@ -38,6 +48,45 @@ input:hover, select:hover, textarea:hover{
 	grid-row: 2;
 }.photo{
 	text-align: center;
-	margin: auto;
+	margin: 10px;
 
+}
+.button{
+	margin:20px;
+	width: 50%;
+	float: left;
+	font-size: 20px;
+}
+textarea{
+	height: 100px;
+}
+.pic{
+	width:300px;
+	height: auto;
+	box-shadow:15px 15px 10px 10px darkgrey;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+select{
+	width: 83%;
+}
+.btn-2{
+	padding: 17px 30px;
+	margin: 5px;
+	background-color: rgb(33, 156, 156);
+	color: white;
+	outline-color: none;
+	border: none;
+	cursor: pointer;
+}.address{
+	margin: 2px;
+	padding: 10px;
+}.number{
+	margin: 2px;
+	padding: 10px;
+
+}
+.email{
+	margin: 2px;
+	padding: 10px;
 }
