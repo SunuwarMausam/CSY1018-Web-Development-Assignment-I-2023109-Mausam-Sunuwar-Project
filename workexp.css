@@ -1,0 +1,49 @@
+.grid-exp{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    font-family: 'dosis';
+    gap: 20px;
+}
+.work{
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: ;
+}
+.exp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.design{
+    background-color: #e8ebfa;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+}
+.web{
+    background-color: #bdbdd7;
+    border-radius: 9px;
+}
+.interest{
+    text-align: center;
+    background-color: #e8ebfa;
+    border-radius: 9px;
+    margin: 20px;
+}
+.skill{
+    text-align: center;
+    background-color: #bdbdd7;
+    border-radius: 9px;
+    margin: 20px;
+}
+.work-info{
+    text-align: center;
+    background-image: linear-gradient(to right,#e8ebfa,#bdbdd7);
+    border-radius: 9px;
+    grid-column: 1/ span 2;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
+    row-gap: 20px;
+}
