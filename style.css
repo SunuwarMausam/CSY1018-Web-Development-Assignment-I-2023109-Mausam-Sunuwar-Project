@@ -1,10 +1,9 @@
 
 body{
-	background-image: linear-gradient(to right,#e8ebfa,#bdbdd7);
+	background-image: linear-gradient(to right,#dce1f0,#bdbdd7);
 	margin: 0;
 	padding: 0;
-	max-width: fit-content;
-	scroll-snap-type: hidden;
+	box-sizing: border-box;
 }
 header{
 	display: flex;
@@ -61,7 +60,7 @@ nav ul li a:hover{
 }
 .item-1{
 	
-	background-color: #e7eaf6;
+	background-color: #dce1f0;
 	border-radius: 9px;
 }
 .content{
@@ -134,7 +133,19 @@ small{
 	padding: 20px ;
 	margin: auto;
 	width: 700px;
-	background-color: #e7eaf6;
+	background-color: #bdbdd7;
+	border-radius: 10px;
+}
+.highlight{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	text-align: center;
+}
+.highlight-exp, .highlight-skill{
+	background-color: #d4dbef;
+	border-radius: 10px;
+
 }
 footer{
 	background-color: rgb(101, 87, 119);
@@ -147,6 +158,9 @@ footer{
 	justify-content: space-around;
 }
 @media only screen and (max-width:540px){
+	nav{
+		visibility: hidden;
+	}
 	body{
 		scroll-snap-type: hidden;
 		background-color: #e7eaf6;
