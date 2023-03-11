@@ -1,3 +1,42 @@
-.gallery-grid{
+img{
+    max-width: 100%;
+    height: auto;
+}
+.grid-card-holder{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 3em;
+    margin: 3em;
+}
+.card-item{
+    aspect-ratio: 1/1.6;
+}
+.grid-image{
+    width: 100%;
+    aspect-ratio: 1/ 1;
+    object-fit: cover;
+}
+.card-menu{
+    display: grid;
+}
+.card-menu > *{
+    grid-column: 1/ 2;
+    grid-row: 1/ 2;
+}
+.card-info{
+    background-color: transparent;
+    align-self: end;
+    margin: 0px 2px 2px;
+    padding: 5px;
+}
+.card-item:nth-child(1){
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.card-item img{
+    aspect-ratio: 1/ 1.7;
+}
+.card-item:hover{
+    transform: scale(1.3,1.4);
+    
 }
