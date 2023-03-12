@@ -1,7 +1,7 @@
 
 .grid-container-2{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	gap: 20px;
 
 }
@@ -9,9 +9,11 @@
 	background-color: rgb(168, 213, 228);
 	border-radius: 10px;
 	margin: auto;
-	text-align: left;
+	text-align: center;
 	padding: 10px;
-	width: auto;
+}
+form{
+
 }
 h1{
 	font-size: 40px;
@@ -113,22 +115,14 @@ select{
 }.icon{
 	color: red;
 }
-@media screen and (max-width:540px){
+@media only screen and (max-width:540px){
 	.grid-container-2{
-		display: grid;
-		grid-template-columns: auto;
-		width: auto;
+		display: flex;
+		flex-direction: column;
 	}
-	.form{
-		width: auto;
-		grid-column: 1;
-		grid-row: 2;
+}
+@media :-moz-full-screen and (minwidth:540px;){
+	.grid-container-2{
+		flex-direction: column;
 	}
-
-}
-span{
-	color: #e7eaf6;
-}
-img{
-	color: white;
 }
