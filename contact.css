@@ -1,124 +1,85 @@
 
 .grid-container-2{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	gap: 20px;
-
-}
-
-form{
-	display: flex;
-	flex-direction: column;
+	grid-template-columns: auto auto;
+	place-items: center;
+	gap: 0px;
 	justify-content: center;
+	margin: 20px;
+	padding: 10px;
 }
-h1{
-	font-size: 40px;
-	color:  rgb(33, 156, 156);
+.shedule{
+	background-color: rgb(131, 58, 131);
+	padding: 35px;
+	color: white;
 	font-family: 'dosis';
-	text-align: center;
+
 }
-label{
+.contact{
+	padding: 17px;
+	border: rgb(131, 58, 131)2px solid;
+	/* box-shadow: 5px 0px 10px black; */
+	color: #FF27A1;
 	font-family: 'dosis';
-	display: inline-block;
+	font-size: 20px;
+	width: 500px;
 	font-weight: bolder;
 }
-
- input,select, textarea{
-	width: 50%;
-	padding: 8px;
-	border: 1px solid green;
-	outline: none;
-	border-radius: 10px;
+input, textarea{
+	border: transparent;
+	padding: 12px;
+	width: 80%;
+	margin: 4px;
+	opacity: 0.7;
+	text-align: center;
+	outline-color: transparent;
+}
+input:hover, textarea:hover{
+	box-shadow: 0px 0px 8px  rgb(165, 14, 165);
+	opacity: 1;
+	outline-color: transparent;
+	
+}
+input:focus::placeholder{
+	color: #FF27A1;
+	transform: scale(1.1,1.1);
+	transition: 1s;
+	border: none;
+	outline-color: transparent;
 	font-family: 'dosis';
-	font-size: medium;
-	text-align: center;
-	font-weight: bolder;
-	margin: 10px;
-}input:focus::placeholder{
-	color: black;
-
-	transform: scale(1.3,1.3);
-	transition: 2s;
 }
-
-input:hover, select:hover, textarea:hover{
-	box-shadow: 0px 0px 10px 1px grey;
-}
-.add-info{
-	grid-column: 1/span 2;
-	grid-row: 2;
-}.photo{
-	text-align: center;
-	margin: 10px;
-	font-family: 'dosis';
-	color: rgb(33, 156, 156);
-	font-size: large;
-}
-.button{
-	margin:10px;
-	width: 100%;
-	text-align: center;
-	font-size: 10px;
+input{
+	
 }
 textarea{
-	height: 100px;
-	margin: auto;
+	height: 50px;
 }
-.pic{
-	width:300px;
-	height: auto;
-	box-shadow:15px 15px 10px 10px darkgrey;
-	border-radius: 5px;
-	opacity: 0.8;
-}
-select{
-	width: 83%;
-}
-.btn-2{
-	padding: 10px 23px;
+.form-item, .add{
 	margin: 15px;
-	background-color: floralwhite;
-	color: rgb(33, 156, 156);
-	outline-color: none;
-	cursor: pointer;
-	border: darkcyan 1px solid;
-	border-radius: 10px;
 }
-.btn-2:hover{
-	transform: scale(1.2,1.2);
-	transition: 0.5s;
-	cursor: pointer;
+.second-btn{
+	padding: 13px;
+	
 	color: white;
-	background-color: rgb(33, 156, 156);
-}.address{
-	margin: 2px;
-	padding: 10px;
-}.number{
-	margin: 2px;
-	padding: 10px;
-
+	background-color: rgb(131, 58, 131);
+	border:    rgb(131, 58, 131) 2px solid;
+	width: 100px;
+	float: right;
 }
-.email{
-	margin: 2px;
-	padding: 10px;
+.second-btn:hover{
+	border: #FF27A1 2px solid;
+	background-color: white;
+	color: rgb(131, 58, 131);
 }
-.add-info{
-	color: black;
-	font-weight: bold;
-}
-.form-holder{
-	text-align: center;
-}.icon{
-	color: red;
-}
-@media only screen and (max-width:540px){
-	form{
+@media (max-width:450px) {
+	.grid-container-2{
 		display: flex;
 		flex-direction: column;
 	}
-}
-@media screen and (minwidth:540px;){
-	.grid-container-2{
-		flex-direction: column;
+	.contact{
+		width: auto;
+	}
+	.shedule{
+		padding: 30px;
 	}
 }
