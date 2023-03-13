@@ -1,3 +1,23 @@
+#scroll{
+    color: #FF27A1;
+    font-size: larger;
+    animation: move 1s ease infinite;
+    position: relative;
+    transition: 1s;
+}
+@keyframes move {
+    0%{
+        transform: translatey(0vh);
+    }
+    50%{
+        transform: translatey(0);
+        opacity: 0.6;
+    }
+    100%{
+        transform: translatey(10vh);
+    }
+
+}
 img{
     max-width: 100%;
     height: auto;
@@ -27,7 +47,7 @@ img{
 .grid-item img:hover{
     transform: scale(1.2,1.2);
     opacity: 1;
-    transition: 3s;
+    transition: 1s;
     box-shadow:10px 10px 10px 10px rgb(147, 146, 146);
 }
 .section-1, .section-2{
@@ -48,4 +68,10 @@ img{
 }
 .section-2{
     justify-content: center;
+    background-color: #d9d9e7;
+    padding: 20px;
+}
+.section-3 img{
+    max-width: 90%;
+    padding: 20px;
 }
