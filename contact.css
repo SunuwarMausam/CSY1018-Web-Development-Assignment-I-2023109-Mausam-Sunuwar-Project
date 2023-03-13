@@ -5,15 +5,11 @@
 	gap: 20px;
 
 }
-.form{
-	background-color: rgb(168, 213, 228);
-	border-radius: 10px;
-	margin: auto;
-	text-align: center;
-	padding: 10px;
-}
-form{
 
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 h1{
 	font-size: 40px;
@@ -116,12 +112,12 @@ select{
 	color: red;
 }
 @media only screen and (max-width:540px){
-	.grid-container-2{
+	form{
 		display: flex;
 		flex-direction: column;
 	}
 }
-@media :-moz-full-screen and (minwidth:540px;){
+@media screen and (minwidth:540px;){
 	.grid-container-2{
 		flex-direction: column;
 	}
