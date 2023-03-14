@@ -1,6 +1,6 @@
 
 body{
-	background-image: linear-gradient(to right,#e5e8f3,#d7d7ea);
+	background-color: #d9d9e7;
 	margin: 0;
 	padding: 0;
 }
@@ -18,6 +18,7 @@ header{
 .logo{
 	font-family: 'dancing script';
 	padding: 20px;
+	color: #241823;
 }
 nav{
 	
@@ -52,6 +53,7 @@ nav ul li a:hover{
 	transform: scale(1.2,1.4);
 	
 }
+
 .welcome{
 	margin: 80px 40px;
 	height: 100vh;
@@ -114,9 +116,8 @@ small{
 .image{
 	width: 200px;
 	height: auto;
-	box-shadow:15px 15px 10px 10px darkgrey;
+	box-shadow:12px 12px 8px 8px darkgrey;
 	border-radius: 5px;
-	opacity: 0.8;
 }
 .smalll-grid{
 	display: grid;
@@ -152,14 +153,14 @@ small{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
-	background-color: #d9d9e7;
+	background-color:  #d7d7ea;
 	
 }
 .intro{
 	grid-column: 1/ span 2;
 	grid-row: 1;
-	background-color: rgb(224, 173, 224);
-	box-shadow: 0px 0px 8px  rgb(165, 14, 165);
+	background-color: rgb(235, 152, 235);
+	box-shadow: 0px 0px 8px  #fa04d9;
 	padding: 30px;
 	margin: 10px;
 	border-radius: 10px;
@@ -167,7 +168,7 @@ small{
 .highlight-exp{
 	grid-column: 2 / span 2;
 	grid-row: 2;
-	box-shadow: 0px 0px 8px  rgb(165, 14, 165);
+	box-shadow: 0px 0px 8px  #fa04d9;
 	padding: 30px;
 	margin: 10px;
 	border-radius: 10px;
@@ -176,8 +177,8 @@ small{
 .highlight-skill{
 	grid-row: 3;
 	grid-column: 1/ span 2;
-	background-color: rgb(222, 157, 222);
-	box-shadow: 0px 0px 8px  rgb(165, 14, 165);
+	background-color: rgb(235, 152, 235);
+	box-shadow: 0px 0px 8px  #fa04d9;
 	padding: 30px;
 	margin: 10px;
 	border-radius: 10px;
@@ -186,7 +187,7 @@ small{
 	grid-row: 4;
 	grid-column: 2/ span 2;
 	padding: 30px;
-	box-shadow: 0px 0px 8px  rgb(165, 14, 165);
+	box-shadow: 0px 0px 8px  #fa04d9;
 	margin: 10px;
 	border-radius: 10px;
 }
@@ -205,7 +206,7 @@ span{
 
 	color: black;
 }
-@media only screen and (max-width:540px){
+@media only screen and (max-width:840px){
 	nav{
 		visibility: hidden;
 	}
