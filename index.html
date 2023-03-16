@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<!-- title of this website -->
 	<title>This is my portfolio</title>
 	<!-- link for css -->
-	<Link rel="stylesheet" href="./style.css">
+	<Link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="./css/hamburger.css">
 	<!-- link for cdns and fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200;300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
 </head>
 <!-- body part -->
 <body>	
+	<section>
 	<!-- header -->
 	<header>
 		<!-- header section logo -->
-			<section class="logo">MAUSAM</section>
+			<div class="logo">MAUSAM</div>
 			<!-- header section navbar -->
-		<section>	
+		<div class="navbar">
 			<nav>
 				<ul>
+					
 					<li><a href="sitereport.html">sitereport</a></li>
 					<li><a href="contact.html">contact</a></li>
 					<li><a href="workexperience.html">workexperience</a></li>
 					<li><a href="portfolio.html">portfolio</a></li>
 					<li><a href="index.html">home</a></li>
 				</ul>
+				
 			</nav>
-		</sectiion>
+		</div>
+		<div class="mobile-menu">
+			<input type="checkbox" class="menu-toggler"/>
+			<div class="hamburger-menu"> <div></div></div>
+		</div>
 	</header>
+</section>
 	<!-- container grid -->
+
 	<section class="welcome">
 <div class="grid-container">
 	<!-- grid first column -->
 		<div class="item-1">
 		<!-- inner div -->
 			<div class="content">
-				<small>Hello!! it's me</small><h1>MAUSAM</h1>
+				<small>Hello!! it's me</small><h2>MAUSAM</h2>
 				<p> This is my portfolio website. In this website,<br>You will know everything about me.
 					<br>If you are imterested in me, you can contact me <br>through contact page.</p>
 				<button type="button" class="btn">Get in touch</button>
@@ -48,7 +59,7 @@
 			<div class="smalll-grid">
 				<!-- grid content -->
 				<div class="smalll-grid-1">
-					<img src="./amirhossein-soltani-ESH9k3sUc8A-unsplash.jpg" class="image">
+					<img src="asssets/amirhossein-soltani-ESH9k3sUc8A-unsplash.jpg" class="image">
 				</div>
 				<div class="smalll-grid-2">
 					Design ideas:<br><small>reddit.com</small>
