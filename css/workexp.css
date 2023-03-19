@@ -1,6 +1,6 @@
 .grid-exp{
     display: grid;
-    grid-template-columns:repeat( 1fr);
+    grid-template-columns:auto;
     font-family: 'dosis';
     gap: 20px;
 }
@@ -9,7 +9,7 @@
     grid-row: 1;
     text-align: center;
     padding: 20px;
-    background-color: ;
+   
 }
 .objective{
     margin: 10px;
@@ -52,4 +52,23 @@ h4{
     padding: 30px;
     font-size: x-large;
     row-gap: 20px;
+}
+@media screen and (max-width:840px){
+    
+    .exp{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .work-image{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+     img{
+       max-width: 300px;
+       height: auto;
+    }
+    .grid-exp{
+        gap: 0px;
+    }
 }

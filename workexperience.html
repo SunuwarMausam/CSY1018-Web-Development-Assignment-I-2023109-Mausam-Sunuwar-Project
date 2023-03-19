@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<!-- title of this website -->
 	<title>This is my portfolio</title>
 	<!-- link for css -->
 	<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/workexp.css">
+        <link rel="stylesheet" href="./css/hamburger.css">
 	<!-- link for cdns and fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200;300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 <!-- body part -->
     <body>
         	<!-- header -->
-	<header>
-		<!-- header section logo -->
-			<div class="logo">MAUSAM</div>
-			<!-- header section navbar -->	
-			<nav>
-				<ul>
-					<li><a href="sitereport.html">sitereport</a></li>
-					<li><a href="contact.html">contact</a></li>
-					<li><a href="workexperience.html">workexperience</a></li>
-					<li><a href="portfolio.html">portfolio</a></li>
-					<li><a href="index.html">home</a></li>
-				</ul>
-			</nav>
-	</header>
+            <section>
+                <!-- header -->
+                <header>
+                    <h1 class="logo">MAUSAM</h1>
+                    <input type="checkbox" id="nav-toggler" class="nav-toggler">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="portfolio.html">portfolio</a></li>
+                            <li><a href="workexperience.html">work experience</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="sitereport.html">site report</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggler" class="nav-toggle-btn">
+                        <span></span>
+                    </label>
+                </header>
+            
+            </section>
    
     <div class="grid-exp">
          <!-- my experience section  -->
@@ -55,7 +62,7 @@
                 satisfied respond.</p>
             </div>
             <div class="work-image">
-                <img src="./premium_photo-1674049760153-144f4dc9208c.webp" alt="" class="laptop">
+                <img src="./asssets/premium_photo-1674049760153-144f4dc9208c.webp" alt="" class="laptop">
             </div>
             <div class="design">
                 <h4>UX/UI Designer</h4>
